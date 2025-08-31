@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science & Nutrition Hub - NutriTrack</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fnutritrack5337back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 4c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm-6 8c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm-6 8c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"/>
+                    </svg>
+                    <span class="ml-2 text-xl font-bold text-primary">NutriTrack</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="features_showcase.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Features</a>
+                    <a href="interactive_dashboard_demo.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Demo</a>
+                    <a href="science_nutrition_hub.html" class="text-primary font-semibold">Science Hub</a>
+                    <a href="community_platform.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Community</a>
+                    <a href="getting_started_guide.html" class="btn-primary">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <div class="absolute inset-0 bg-white/50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary mb-6">
+                    <span class="text-gradient">Science-Backed</span><br />
+                    Nutrition Knowledge
+                </h1>
+                <p class="text-xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                    Discover evidence-based nutrition insights, expert research, and practical guidance to optimize your health journey with scientific precision.
+                </p>
+                
+                <!-- Search Bar -->
+                <div class="max-w-2xl mx-auto mb-12">
+                    <div class="relative">
+                        <input type="text" placeholder="Search nutrition topics, research, calculators..." class="input-field pl-12 pr-4 py-4 text-lg" />
+                        <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 text-text-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary">500+</div>
+                        <p class="text-sm text-text-secondary">Research Articles</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent">25+</div>
+                        <p class="text-sm text-text-secondary">Expert Contributors</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-secondary">15+</div>
+                        <p class="text-sm text-text-secondary">Interactive Tools</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary">1M+</div>
+                        <p class="text-sm text-text-secondary">Monthly Readers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Categories -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Explore Our Knowledge Center
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Comprehensive resources backed by peer-reviewed research and expert insights
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Nutrition Science Articles -->
+                <div class="card hover:shadow-card-hover transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Nutrition Science Articles</h3>
+                    <p class="text-text-secondary mb-4">
+                        Weekly deep-dives into macro timing, nutrient absorption, metabolism optimization, and cutting-edge nutrition research.
+                    </p>
+                    <div class="flex items-center text-sm text-primary font-medium">
+                        <span>150+ Articles</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Expert Interviews -->
+                <div class="card hover:shadow-card-hover transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Expert Interviews</h3>
+                    <p class="text-text-secondary mb-4">
+                        Conversations with registered dietitians, sports nutritionists, and wellness researchers on trending topics and myth-busting.
+                    </p>
+                    <div class="flex items-center text-sm text-accent font-medium">
+                        <span>25+ Interviews</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Interactive Calculators -->
+                <div class="card hover:shadow-card-hover transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Interactive Calculators</h3>
+                    <p class="text-text-secondary mb-4">
+                        Personalized macro targets, hydration needs, and supplement requirements with scientific explanations.
+                    </p>
+                    <div class="flex items-center text-sm text-secondary font-medium">
+                        <span>15+ Tools</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Seasonal Guides -->
+                <div class="card hover:shadow-card-hover transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64 19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Seasonal Eating Guides</h3>
+                    <p class="text-text-secondary mb-4">
+                        Science-backed recommendations for optimizing nutrition throughout the year with meal suggestions and tracking tips.
+                    </p>
+                    <div class="flex items-center text-sm text-primary font-medium">
+                        <span>12+ Guides</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Myth Busting -->
+                <div class="card hover:shadow-card-hover transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Myth Busting</h3>
+                    <p class="text-text-secondary mb-4">
+                        Common nutrition misconceptions addressed with peer-reviewed research citations and practical applications.
+                    </p>
+                    <div class="flex items-center text-sm text-accent font-medium">
+                        <span>50+ Myths Debunked</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Research Partnerships -->
+                <div class="card hover:shadow-card-hover transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Research Partnerships</h3>
+                    <p class="text-text-secondary mb-4">
+                        Collaborations with nutrition science institutions and ongoing studies using anonymized NutriTrack data.
+                    </p>
+                    <div class="flex items-center text-sm text-secondary font-medium">
+                        <span>8+ Partnerships</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Latest Research & Insights
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Stay updated with the newest findings in nutrition science
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Featured Article -->
+                <div class="lg:col-span-2">
+                    <div class="card h-full">
+                        <div class="aspect-w-16 aspect-h-9 mb-6 overflow-hidden rounded-lg">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" alt="Macro timing research" class="w-full h-64 object-cover" onerror="this.src='https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        </div>
+                        <div class="flex items-center space-x-4 mb-4">
+                            <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm font-medium">Featured Research</span>
+                            <span class="text-text-tertiary text-sm">August 28, 2025</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-text-primary mb-4">
+                            The Science of Macro Timing: When to Eat for Optimal Performance
+                        </h3>
+                        <p class="text-text-secondary mb-6">
+                            New research reveals how the timing of macronutrient intake affects metabolism, muscle protein synthesis, and cognitive performance. This comprehensive analysis of 15 peer-reviewed studies provides actionable insights for optimizing your nutrition schedule.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=50&auto=format&fit=crop" alt="Dr. Sarah Chen" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=50'; this.onerror=null;" />
+                                <div>
+                                    <p class="font-semibold text-text-primary text-sm">Dr. Sarah Chen</p>
+                                    <p class="text-text-tertiary text-xs">Sports Nutritionist, PhD</p>
+                                </div>
+                            </div>
+                            <button class="text-primary hover:text-primary-700 font-medium">
+                                Read Full Article →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Articles -->
+                <div class="space-y-6">
+                    <div class="card">
+                        <div class="flex space-x-4">
+                            <img src="https://images.pixabay.com/photo/2017/05/11/19/44/fresh-fruits-2305192_960_720.jpg?auto=compress&cs=tinysrgb&w=100" alt="Hydration science" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" onerror="this.src='https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                            <div>
+                                <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs font-medium">Hydration</span>
+                                <h4 class="font-semibold text-text-primary mt-2 mb-2">Optimal Hydration: Beyond the 8-Glass Rule</h4>
+                                <p class="text-text-tertiary text-sm">5 min read</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex space-x-4">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=100&auto=format&fit=crop" alt="Supplement research" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" onerror="this.src='https://images.pexels.com/photos/3683107/pexels-photo-3683107.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                            <div>
+                                <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs font-medium">Supplements</span>
+                                <h4 class="font-semibold text-text-primary mt-2 mb-2">Micronutrient Deficiencies in Modern Diets</h4>
+                                <p class="text-text-tertiary text-sm">7 min read</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex space-x-4">
+                            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Metabolism research" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" onerror="this.src='https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                            <div>
+                                <span class="bg-primary-100 text-primary px-2 py-1 rounded text-xs font-medium">Metabolism</span>
+                                <h4 class="font-semibold text-text-primary mt-2 mb-2">Circadian Rhythms and Metabolic Health</h4>
+                                <p class="text-text-tertiary text-sm">6 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools Preview -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Interactive Nutrition Tools
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Calculate your personalized nutrition needs with science-backed formulas
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Macro Calculator -->
+                <div class="card">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Macro Calculator</h3>
+                    <p class="text-text-secondary mb-4">Calculate your optimal protein, carb, and fat intake based on your goals and activity level.</p>
+                    <button class="btn-primary w-full">Calculate Macros</button>
+                </div>
+
+                <!-- Hydration Calculator -->
+                <div class="card">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l-2 4h4l-2-4zM5.35 13l1.93-3.46L8.21 12H5.35zM19 12l-1.93-2.54L15.14 12H19zM12 6.5L9.5 11h5L12 6.5zM12 22c3.31 0 6-2.69 6-6 0-2.97-2.16-5.43-5-5.91V22h-2V10.09c-2.84.48-5 2.94-5 5.91 0 3.31 2.69 6 6 6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Hydration Calculator</h3>
+                    <p class="text-text-secondary mb-4">Determine your daily water needs based on weight, activity, and environmental factors.</p>
+                    <button class="btn-accent w-full">Calculate Hydration</button>
+                </div>
+
+                <!-- BMR Calculator -->
+                <div class="card">
+                    <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">BMR Calculator</h3>
+                    <p class="text-text-secondary mb-4">Calculate your basal metabolic rate to understand your daily calorie needs at rest.</p>
+                    <button class="btn-secondary w-full">Calculate BMR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Advisory Board -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Our Expert Advisory Board
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Leading nutrition scientists and wellness experts guiding our research
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Expert 1 -->
+                <div class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=200&auto=format&fit=crop" alt="Dr. Sarah Chen" class="w-24 h-24 rounded-full object-cover mx-auto mb-4" onerror="this.src='https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;" />
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Dr. Sarah Chen</h3>
+                    <p class="text-primary font-medium mb-3">Sports Nutritionist, PhD</p>
+                    <p class="text-text-secondary text-sm mb-4">
+                        15+ years researching performance nutrition and metabolic optimization. Published 50+ peer-reviewed studies.
+                    </p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-primary-100 text-primary px-2 py-1 rounded text-xs">Performance Nutrition</span>
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs">Metabolism</span>
+                    </div>
+                </div>
+
+                <!-- Expert 2 -->
+                <div class="card text-center">
+                    <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg?auto=compress&cs=tinysrgb&w=200" alt="Dr. Michael Rodriguez" class="w-24 h-24 rounded-full object-cover mx-auto mb-4" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop'; this.onerror=null;" />
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Dr. Michael Rodriguez</h3>
+                    <p class="text-primary font-medium mb-3">Registered Dietitian</p>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Clinical nutrition expert specializing in weight management and metabolic disorders. 20+ years experience.
+                    </p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs">Clinical Nutrition</span>
+                        <span class="bg-primary-100 text-primary px-2 py-1 rounded text-xs">Weight Management</span>
+                    </div>
+                </div>
+
+                <!-- Expert 3 -->
+                <div class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1594824694996-f1b2d2b1b8e5?q=80&w=200&auto=format&fit=crop" alt="Dr. Emily Watson" class="w-24 h-24 rounded-full object-cover mx-auto mb-4" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;" />
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Dr. Emily Watson</h3>
+                    <p class="text-primary font-medium mb-3">Biochemist, PhD</p>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Leading researcher in nutrient absorption and micronutrient interactions. Author of 3 nutrition textbooks.
+                    </p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs">Biochemistry</span>
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs">Micronutrients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="card">
+                <h2 class="text-3xl font-bold text-text-primary mb-4">
+                    Stay Updated with Latest Research
+                </h2>
+                <p class="text-xl text-text-secondary mb-8">
+                    Get weekly nutrition science insights, expert interviews, and exclusive research findings delivered to your inbox.
+                </p>
+                
+                <div class="max-w-md mx-auto">
+                    <div class="flex gap-4">
+                        <input type="email" placeholder="Enter your email" class="input-field flex-1" />
+                        <button class="btn-primary px-8">Subscribe</button>
+                    </div>
+                    <p class="text-sm text-text-tertiary mt-3">
+                        Join 50,000+ health enthusiasts. Unsubscribe anytime.
+                    </p>
+                </div>
+
+                <div class="flex justify-center items-center space-x-8 mt-8 pt-8 border-t border-border-light">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">50K+</div>
+                        <p class="text-sm text-text-secondary">Subscribers</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-accent">4.9/5</div>
+                        <p class="text-sm text-text-secondary">Content Rating</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-secondary">Weekly</div>
+                        <p class="text-sm text-text-secondary">New Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                Ready to Apply Science to Your Nutrition?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Transform your health journey with evidence-based insights and personalized tracking powered by nutrition science.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="getting_started_guide.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+                    Start Your Journey
+                </a>
+                <a href="interactive_dashboard_demo.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300">
+                    Try Demo First
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 4c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm-6 8c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm-6 8c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold">NutriTrack</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Empowering your health journey with intelligent nutrition tracking and personalized insights.
+                    </p>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h3 class="font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="features_showcase.html" class="hover:text-white transition-colors duration-200">Features</a></li>
+                        <li><a href="interactive_dashboard_demo.html" class="hover:text-white transition-colors duration-200">Demo</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Pricing</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">API</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="science_nutrition_hub.html" class="hover:text-white transition-colors duration-200">Science Hub</a></li>
+                        <li><a href="getting_started_guide.html" class="hover:text-white transition-colors duration-200">Getting Started</a></li>
+                        <li><a href="community_platform.html" class="hover:text-white transition-colors duration-200">Community</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">About</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Blog</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Careers</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">© 2025 NutriTrack. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors duration-200">Privacy</a>
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors duration-200">Terms</a>
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors duration-200">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

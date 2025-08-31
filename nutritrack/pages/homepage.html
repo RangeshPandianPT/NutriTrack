@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriTrack - Fuel Your Body, Track Your Health</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fnutritrack5337back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 4c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm-6 8c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm-6 8c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"/>
+                    </svg>
+                    <span class="ml-2 text-xl font-bold text-primary">NutriTrack</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="features_showcase.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Features</a>
+                    <a href="interactive_dashboard_demo.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Demo</a>
+                    <a href="science_nutrition_hub.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Science Hub</a>
+                    <a href="community_platform.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Community</a>
+                    <a href="getting_started_guide.html" class="btn-primary">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <div class="absolute inset-0 bg-white/50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left animate-fade-in">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary mb-6">
+                        <span class="text-gradient">Fuel Your Body,</span><br />
+                        Track Your Health
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8 max-w-2xl">
+                        Transform your nutrition journey with AI-powered insights, personalized meal suggestions, and comprehensive progress tracking that makes healthy living achievable and enjoyable.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="getting_started_guide.html" class="btn-primary text-lg px-8 py-4 animate-scale-in">
+                            Start Your Free Journey
+                        </a>
+                        <a href="interactive_dashboard_demo.html" class="bg-surface text-primary border-2 border-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all duration-300">
+                            Try Interactive Demo
+                        </a>
+                    </div>
+
+                    <!-- Success Story Ticker -->
+                    <div class="mt-12 p-4 bg-surface/80 backdrop-blur-sm rounded-lg shadow-sm">
+                        <div class="flex items-center space-x-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=150&auto=format&fit=crop" alt="Success story user" class="w-12 h-12 rounded-full object-cover" onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150'; this.onerror=null;" />
+                            <div class="flex-1">
+                                <p class="text-sm font-semibold text-text-primary">"Lost 25 lbs in 3 months"</p>
+                                <p class="text-xs text-text-secondary">Sarah M. - Improved energy by 40%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual -->
+                <div class="relative animate-slide-up">
+                    <div class="bg-surface rounded-2xl shadow-lg p-6 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <div class="space-y-4">
+                            <!-- Mock Dashboard Preview -->
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold text-text-primary">Today's Progress</h3>
+                                <span class="text-sm text-success font-medium">On Track</span>
+                            </div>
+                            
+                            <!-- Calorie Progress -->
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-text-secondary">Calories</span>
+                                    <span class="text-text-primary">1,847 / 2,200</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 84%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Macro Breakdown -->
+                            <div class="grid grid-cols-3 gap-4 mt-4">
+                                <div class="text-center">
+                                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <span class="text-primary font-bold text-sm">92g</span>
+                                    </div>
+                                    <p class="text-xs text-text-secondary">Protein</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <span class="text-accent font-bold text-sm">245g</span>
+                                    </div>
+                                    <p class="text-xs text-text-secondary">Carbs</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <span class="text-secondary font-bold text-sm">65g</span>
+                                    </div>
+                                    <p class="text-xs text-text-secondary">Fat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three-Pillar Value Proposition -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Why Choose NutriTrack?
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Experience the perfect blend of science-backed nutrition insights and user-friendly tracking
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- AI-Powered Meal Suggestions -->
+                <div class="card hover:shadow-card-hover transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">AI-Powered Meal Suggestions</h3>
+                    <p class="text-text-secondary mb-4">
+                        Get personalized meal recommendations based on your goals, preferences, and nutritional needs using advanced AI algorithms.
+                    </p>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Smart recipe recommendations
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Dietary restriction support
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Meal timing optimization
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Comprehensive Progress Analytics -->
+                <div class="card hover:shadow-card-hover transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Comprehensive Progress Analytics</h3>
+                    <p class="text-text-secondary mb-4">
+                        Track your journey with detailed analytics, visual progress charts, and actionable insights that keep you motivated.
+                    </p>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Interactive progress charts
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Weekly/monthly reports
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Goal achievement tracking
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Personalized Nutrition Insights -->
+                <div class="card hover:shadow-card-hover transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Personalized Nutrition Insights</h3>
+                    <p class="text-text-secondary mb-4">
+                        Receive tailored recommendations and insights based on your unique health profile, goals, and eating patterns.
+                    </p>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Custom macro targets
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Nutrient deficiency alerts
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Health trend analysis
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Dashboard Preview -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Experience NutriTrack in Action
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    See how easy it is to track your nutrition and monitor your progress with our intuitive dashboard
+                </p>
+            </div>
+
+            <div class="bg-surface rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Meal Logging Interface -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold text-text-primary">Quick Meal Logging</h3>
+                        
+                        <!-- Search Bar -->
+                        <div class="relative">
+                            <input type="text" placeholder="Search foods..." class="input-field pl-10" value="Grilled chicken breast" />
+                            <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+
+                        <!-- Recent Meals -->
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between p-3 bg-primary-50 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Grilled chicken" class="w-12 h-12 rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1532550907401-a500c9a57435?q=80&w=60&auto=format&fit=crop'; this.onerror=null;" />
+                                    <div>
+                                        <p class="font-medium text-text-primary">Grilled Chicken Breast</p>
+                                        <p class="text-sm text-text-secondary">165g • 231 cal</p>
+                                    </div>
+                                </div>
+                                <button class="text-primary hover:text-primary-700">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3 bg-accent-50 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://images.pixabay.com/photo/2017/05/11/19/44/fresh-fruits-2305192_960_720.jpg?auto=compress&cs=tinysrgb&w=60" alt="Mixed vegetables" class="w-12 h-12 rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=60&auto=format&fit=crop'; this.onerror=null;" />
+                                    <div>
+                                        <p class="font-medium text-text-primary">Mixed Vegetables</p>
+                                        <p class="text-sm text-text-secondary">200g • 85 cal</p>
+                                    </div>
+                                </div>
+                                <button class="text-accent hover:text-accent-700">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Charts -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold text-text-primary">Weekly Progress</h3>
+                        
+                        <!-- Mock Chart -->
+                        <div class="bg-border-light rounded-lg p-4 h-48 flex items-end justify-between space-x-2">
+                            <div class="flex flex-col items-center">
+                                <div class="bg-primary rounded-t h-20 w-8 mb-2"></div>
+                                <span class="text-xs text-text-secondary">Mon</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-primary rounded-t h-32 w-8 mb-2"></div>
+                                <span class="text-xs text-text-secondary">Tue</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-primary rounded-t h-24 w-8 mb-2"></div>
+                                <span class="text-xs text-text-secondary">Wed</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-primary rounded-t h-36 w-8 mb-2"></div>
+                                <span class="text-xs text-text-secondary">Thu</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-primary rounded-t h-28 w-8 mb-2"></div>
+                                <span class="text-xs text-text-secondary">Fri</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-accent rounded-t h-16 w-8 mb-2"></div>
+                                <span class="text-xs text-text-secondary">Sat</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-secondary rounded-t h-12 w-8 mb-2"></div>
+                                <span class="text-xs text-text-secondary">Sun</span>
+                            </div>
+                        </div>
+
+                        <!-- Stats -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-3 bg-success/10 rounded-lg">
+                                <p class="text-2xl font-bold text-success">7</p>
+                                <p class="text-sm text-text-secondary">Days Streak</p>
+                            </div>
+                            <div class="text-center p-3 bg-primary/10 rounded-lg">
+                                <p class="text-2xl font-bold text-primary">94%</p>
+                                <p class="text-sm text-text-secondary">Goal Achievement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <a href="interactive_dashboard_demo.html" class="btn-primary">
+                        Try Full Interactive Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Showcase -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Seamlessly Connects With Your Favorite Apps
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Sync your data across all your health and fitness platforms
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <!-- MyFitnessPal -->
+                <div class="flex flex-col items-center p-6 bg-border-light rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <p class="font-semibold text-text-primary">MyFitnessPal</p>
+                </div>
+
+                <!-- Fitbit -->
+                <div class="flex flex-col items-center p-6 bg-border-light rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M15.5 14h-7c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5h7c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z"/>
+                        </svg>
+                    </div>
+                    <p class="font-semibold text-text-primary">Fitbit</p>
+                </div>
+
+                <!-- Apple Health -->
+                <div class="flex flex-col items-center p-6 bg-border-light rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <p class="font-semibold text-text-primary">Apple Health</p>
+                </div>
+
+                <!-- Garmin -->
+                <div class="flex flex-col items-center p-6 bg-border-light rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 6L12 10.5 8.5 8 12 5.5 15.5 8zM8.5 16L12 13.5 15.5 16 12 18.5 8.5 16z"/>
+                        </svg>
+                    </div>
+                    <p class="font-semibold text-text-primary">Garmin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Teaser -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Choose Your Perfect Plan
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Start free and upgrade as your health journey evolves
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Free Plan -->
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Free</h3>
+                    <div class="text-3xl font-bold text-text-primary mb-4">$0<span class="text-lg text-text-secondary">/month</span></div>
+                    <ul class="space-y-3 text-text-secondary mb-6">
+                        <li class="flex items-center justify-center">
+                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Basic meal tracking
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Calorie counting
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Basic progress tracking
+                        </li>
+                    </ul>
+                    <a href="getting_started_guide.html" class="w-full bg-border text-text-primary py-3 rounded-lg font-semibold hover:bg-border-light transition-colors duration-300 block">
+                        Get Started Free
+                    </a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="card text-center border-2 border-primary relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">
+                        Most Popular
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Pro</h3>
+                    <div class="text-3xl font-bold text-text-primary mb-4">$9.99<span class="text-lg text-text-secondary">/month</span></div>
+                    <ul class="space-y-3 text-text-secondary mb-6">
+                        <li class="flex items-center justify-center">
+                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            AI meal suggestions
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Advanced analytics
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Meal planning
+                        </li>
+                    </ul>
+                    <a href="getting_started_guide.html" class="btn-primary w-full">
+                        Start Pro Trial
+                    </a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Premium</h3>
+                    <div class="text-3xl font-bold text-text-primary mb-4">$19.99<span class="text-lg text-text-secondary">/month</span></div>
+                    <ul class="space-y-3 text-text-secondary mb-6">
+                        <li class="flex items-center justify-center">
+                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Personal nutritionist
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Custom meal plans
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Priority support
+                        </li>
+                    </ul>
+                    <a href="getting_started_guide.html" class="btn-accent w-full">
+                        Go Premium
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Trusted by Health Enthusiasts Worldwide
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold text-primary">500K+</div>
+                    <p class="text-text-secondary">Meals tracked daily</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold text-accent">4.8/5</div>
+                    <p class="text-text-secondary">App store rating</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold text-secondary">150K+</div>
+                    <p class="text-text-secondary">Active users</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold text-primary">95%</div>
+                    <p class="text-text-secondary">Goal achievement rate</p>
+                </div>
+            </div>
+
+            <!-- Expert Endorsements -->
+            <div class="mt-16 grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <div class="flex items-start space-x-4">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=100&auto=format&fit=crop" alt="Dr. Sarah Johnson" class="w-16 h-16 rounded-full object-cover" onerror="this.src='https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                        <div>
+                            <p class="text-text-secondary mb-4">
+                                "NutriTrack's AI-powered insights have revolutionized how my clients approach nutrition tracking. The personalized recommendations are scientifically sound and incredibly effective."
+                            </p>
+                            <div>
+                                <p class="font-semibold text-text-primary">Dr. Sarah Johnson</p>
+                                <p class="text-sm text-text-secondary">Registered Dietitian</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="flex items-start space-x-4">
+                        <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg?auto=compress&cs=tinysrgb&w=100" alt="Mike Thompson" class="w-16 h-16 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                        <div>
+                            <p class="text-text-secondary mb-4">
+                                "As a personal trainer, I recommend NutriTrack to all my clients. The comprehensive analytics help them understand their nutrition patterns and make lasting changes."
+                            </p>
+                            <div>
+                                <p class="font-semibold text-text-primary">Mike Thompson</p>
+                                <p class="text-sm text-text-secondary">Certified Personal Trainer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                Ready to Transform Your Health Journey?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Join thousands of users who have already discovered the power of intelligent nutrition tracking
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="getting_started_guide.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+                    Start Your Free Journey
+                </a>
+                <a href="interactive_dashboard_demo.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300">
+                    Try Demo First
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 4c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm-6 8c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm12 0c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2zm-6 8c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold">NutriTrack</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Empowering your health journey with intelligent nutrition tracking and personalized insights.
+                    </p>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h3 class="font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="features_showcase.html" class="hover:text-white transition-colors duration-200">Features</a></li>
+                        <li><a href="interactive_dashboard_demo.html" class="hover:text-white transition-colors duration-200">Demo</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Pricing</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">API</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="science_nutrition_hub.html" class="hover:text-white transition-colors duration-200">Science Hub</a></li>
+                        <li><a href="getting_started_guide.html" class="hover:text-white transition-colors duration-200">Getting Started</a></li>
+                        <li><a href="community_platform.html" class="hover:text-white transition-colors duration-200">Community</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">About</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Blog</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Careers</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">© 2025 NutriTrack. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors duration-200">Privacy</a>
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors duration-200">Terms</a>
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors duration-200">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
