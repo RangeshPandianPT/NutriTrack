@@ -1,4 +1,4 @@
-# HTML
+# NutriTrack
 
 A modern HTML project utilizing Tailwind CSS for building responsive web applications with minimal setup.
 
@@ -34,7 +34,7 @@ yarn dev
 ## 📁 Project Structure
 
 ```
-html_app/
+nutritrack/
 ├── css/
 │   ├── tailwind.css   # Tailwind source file with custom utilities
 │   └── main.css       # Compiled CSS (generated)
@@ -76,7 +76,8 @@ The app is built with responsive design using Tailwind CSS breakpoints:
 
 ## 🙏 Acknowledgments
 
-- Built with [Rocket.new](https://rocket.new)
+- Built with RANGESHPANDIAN PT
 - Powered by HTML and Tailwind CSS
 
-Built with ❤️ on Rocket.new
+
+
