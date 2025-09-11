@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-  /* Primary Colors */
+ 
   --color-primary: #2E7D32; /* green-800 */
   --color-primary-50: #E8F5E8; /* green-50 */
   --color-primary-100: #C8E6C9; /* green-100 */
@@ -18,7 +18,7 @@
   --color-primary-800: #2E7D32; /* green-800 */
   --color-primary-900: #1B5E20; /* green-900 */
 
-  /* Secondary Colors */
+
   --color-secondary: #4CAF50; /* green-500 */
   --color-secondary-50: #E8F5E8; /* green-50 */
   --color-secondary-100: #C8E6C9; /* green-100 */
@@ -31,7 +31,7 @@
   --color-secondary-800: #2E7D32; /* green-800 */
   --color-secondary-900: #1B5E20; /* green-900 */
 
-  /* Accent Colors */
+  
   --color-accent: #FF6F00; /* orange-600 */
   --color-accent-50: #FFF3E0; /* orange-50 */
   --color-accent-100: #FFE0B2; /* orange-100 */
@@ -67,7 +67,7 @@
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
 
-  /* Animation Variables */
+ 
   --transition-fast: 200ms ease-out;
   --transition-normal: 300ms ease-out;
 }
